@@ -3,6 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogSite", "BlogSite\BlogSite.csproj", "{7C25D32C-BC85-4D18-96FC-7AB5185B1DAE}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{44D94680-CD7A-454A-A535-5DDE6933805B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogSite.Logic.Tests", "BlogSite.Logic.Tests\BlogSite.Logic.Tests.csproj", "{5E55310D-5675-4562-97D2-C1041BFE9690}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{60F7C736-7044-4E1E-A180-086943C714C7}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,8 +24,15 @@ Global
 		{7C25D32C-BC85-4D18-96FC-7AB5185B1DAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7C25D32C-BC85-4D18-96FC-7AB5185B1DAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7C25D32C-BC85-4D18-96FC-7AB5185B1DAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E55310D-5675-4562-97D2-C1041BFE9690}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E55310D-5675-4562-97D2-C1041BFE9690}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E55310D-5675-4562-97D2-C1041BFE9690}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E55310D-5675-4562-97D2-C1041BFE9690}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5E55310D-5675-4562-97D2-C1041BFE9690} = {44D94680-CD7A-454A-A535-5DDE6933805B}
 	EndGlobalSection
 EndGlobal
