@@ -1,0 +1,36 @@
+
+User
+Login/Logout using OAuth
+
+Features
+
+Id
+First Name
+Last Name
+Username
+Auth info (e.g. auth token etc.)
+
+Blog Post
+
+Id
+Title
+User (Author)
+Create Date/time
+Update Date/time
+Tags
+Content
+FriendlyUrl
+
+Comments
+
+Id
+Blog post Id
+User (Can be anonymous)
+Parent Id (in case reply to a comment)
+Content
+
+Resources (can be used in blog post to embed with the contents can be picked up by the content editor)
+
+Id
+Type (image, video, audio etc.)
+filename

@@ -51,10 +51,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ArticleTest.cs" />
+    <Compile Include="Helpers\BlogPostTestHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BlogSite\BlogSite.csproj">
+      <Project>{7c25d32c-bc85-4d18-96fc-7ab5185b1dae}</Project>
+      <Name>BlogSite</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />

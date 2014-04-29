@@ -1,4 +1,5 @@
-﻿using NUnit.Framework;
+﻿using BlogSite.Logic.Tests.Helpers;
+using NUnit.Framework;
 using FluentAssertions;
 
 namespace BlogSite.Logic.Tests
@@ -9,27 +10,18 @@ namespace BlogSite.Logic.Tests
         [Test]
         public void CanCreateaBlogPost()
         {
-            var authorUserId = 1;
-            var title = "This is a new Article Title";
-            var content = "This is the new Article Content";
-
-            var blogArticle = new BlogPost(authorUserId, title, content);
-            blogArticle.Should().NotBeNull();
+            var blogPost = BlogPostTestHelper.CreateBlogPost();
+            blogPost.Should().NotBeNull();
 
         }
-    }
 
-    public class BlogPost
-    {
-        public int AuthorUserId { get; set; }
-        public string Title { get; set; }
-        public string Content { get; set; }
-
-        public BlogPost(int authorUserId, string title, string content)
+        [Test]
+        public void BlogPostShouldHaveAnId()
         {
-            AuthorUserId = authorUserId;
-            Title = title;
-            Content = content;
+            var blogpost = BlogPostTestHelper.CreateBlogPost();
+            blogpost.Id.Should().BeGreaterThan(0);
+
         }
+
     }
 }
