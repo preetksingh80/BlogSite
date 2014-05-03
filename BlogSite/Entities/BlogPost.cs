@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace BlogSite
+namespace BlogSite.Entities
 {
     public class BlogPost
     {
@@ -13,20 +13,19 @@ namespace BlogSite
         public DateTime UpdatedDate { get; set; }
         public IList<string> Tags { get; private set; }
         
-        public BlogPost(int authorUserId, string title, string content)
+        public BlogPost(int authorUserId, string title)
         {
-            AssignId();
+            if (authorUserId < 1 ){throw new ApplicationException("Blogpost cannot be created without an author");}
+            if (string.IsNullOrWhiteSpace(title)) { throw new ApplicationException("Blogpost cannot be created without a title"); }
+            Id = 1;
             AuthorUserId = authorUserId;
             Title = title;
-            Content = content;
+            Content = string.Empty;
             Tags = new List<string>();
             CreatedDate = DateTime.Now;
             UpdatedDate = DateTime.Now;
         }
 
-        private void AssignId()
-        {
-            Id = 1;
-        }
+        
     }
 }

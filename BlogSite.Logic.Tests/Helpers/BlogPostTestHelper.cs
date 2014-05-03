@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using BlogSite.Entities;
 
 namespace BlogSite.Logic.Tests.Helpers
 {
@@ -13,7 +14,19 @@ namespace BlogSite.Logic.Tests.Helpers
             var authorUserId = 1;
             var title = "This is a new Article Title";
             var content = "This is the new Article Content";
-            return new BlogPost(authorUserId, title, content);
+            var post = new BlogPost(authorUserId, title);
+            post.Content = content;
+            return post;
+        }
+
+        public static BlogPost CreateBlogPostWithoutAuthor()
+        {
+            return new BlogPost(0,"title");
+        }
+
+        public static BlogPost CreateBlogPostWithoutTitle()
+        {
+            return new BlogPost(1, "");
         }
     }
 }

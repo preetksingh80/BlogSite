@@ -19,6 +19,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		Reqirement Specs.txt = Reqirement Specs.txt
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{E2035EB4-9BC7-418B-AEE7-A64B8EE7CE39}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repositories", "Repositories\Repositories.csproj", "{EAA63C64-2C25-4E39-8DEC-CAF612D5137F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{60082E92-107B-4EC7-9B61-AAEC236356C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogingServices", "DefaultServices\BlogingServices.csproj", "{A6D02855-C977-434C-A2E1-DC2DDC6EFD0C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,11 +41,22 @@ Global
 		{5E55310D-5675-4562-97D2-C1041BFE9690}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5E55310D-5675-4562-97D2-C1041BFE9690}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5E55310D-5675-4562-97D2-C1041BFE9690}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAA63C64-2C25-4E39-8DEC-CAF612D5137F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAA63C64-2C25-4E39-8DEC-CAF612D5137F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAA63C64-2C25-4E39-8DEC-CAF612D5137F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAA63C64-2C25-4E39-8DEC-CAF612D5137F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6D02855-C977-434C-A2E1-DC2DDC6EFD0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6D02855-C977-434C-A2E1-DC2DDC6EFD0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6D02855-C977-434C-A2E1-DC2DDC6EFD0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6D02855-C977-434C-A2E1-DC2DDC6EFD0C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{5E55310D-5675-4562-97D2-C1041BFE9690} = {44D94680-CD7A-454A-A535-5DDE6933805B}
+		{EAA63C64-2C25-4E39-8DEC-CAF612D5137F} = {E2035EB4-9BC7-418B-AEE7-A64B8EE7CE39}
+		{7C25D32C-BC85-4D18-96FC-7AB5185B1DAE} = {60082E92-107B-4EC7-9B61-AAEC236356C4}
+		{A6D02855-C977-434C-A2E1-DC2DDC6EFD0C} = {60082E92-107B-4EC7-9B61-AAEC236356C4}
 	EndGlobalSection
 EndGlobal

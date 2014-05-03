@@ -50,7 +50,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ArticleTest.cs" />
+    <Compile Include="Security\SecurityHelper.cs" />
+    <Compile Include="Security\A_user.cs" />
+    <Compile Include="When_a_blog_post_is_created.cs" />
     <Compile Include="Helpers\BlogPostTestHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -61,6 +63,10 @@
     <ProjectReference Include="..\BlogSite\BlogSite.csproj">
       <Project>{7c25d32c-bc85-4d18-96fc-7ab5185b1dae}</Project>
       <Name>BlogSite</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DefaultServices\BlogingServices.csproj">
+      <Project>{A6D02855-C977-434C-A2E1-DC2DDC6EFD0C}</Project>
+      <Name>BlogingServices</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
