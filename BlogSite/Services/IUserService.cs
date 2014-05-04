@@ -1,7 +1,9 @@
-﻿namespace BlogSite.Logic.Tests.Security
+﻿using BlogSite.Entities;
+
+namespace BlogSite.Services
 {
     public interface IUserService
     {
-        bool LoginUser(string username, string password);
+        User LoginUser(string username, string password);
     }
 }

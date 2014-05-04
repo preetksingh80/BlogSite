@@ -68,6 +68,10 @@
       <Project>{A6D02855-C977-434C-A2E1-DC2DDC6EFD0C}</Project>
       <Name>BlogingServices</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Repositories\Repositories.csproj">
+      <Project>{eaa63c64-2c25-4e39-8dec-caf612d5137f}</Project>
+      <Name>Repositories</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
