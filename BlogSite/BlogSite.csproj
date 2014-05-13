@@ -43,6 +43,7 @@
     <Compile Include="Entities\BlogPost.cs" />
     <Compile Include="Entities\Comment.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\IBlogpostService.cs" />
     <Compile Include="Services\IUserService.cs" />
     <Compile Include="Entities\User.cs" />
   </ItemGroup>

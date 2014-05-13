@@ -50,8 +50,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Comments\Comment.cs" />
     <Compile Include="Security\SecurityHelper.cs" />
     <Compile Include="Security\A_user.cs" />
+    <Compile Include="Security\When_a_user_is_successfully_logged_in.cs" />
     <Compile Include="When_a_blog_post_is_created.cs" />
     <Compile Include="Helpers\BlogPostTestHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

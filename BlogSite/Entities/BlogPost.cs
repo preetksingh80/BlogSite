@@ -8,11 +8,12 @@ namespace BlogSite.Entities
         public int AuthorUserId { get; set; }
         public string Title { get; set; }
         public string Content { get; set; }
-        public int Id { get; private set; }
-        public DateTime CreatedDate { get; private set; }
+        public int Id { get;  set; }
+        public DateTime CreatedDate { get;  set; }
         public DateTime UpdatedDate { get; set; }
-        public IList<string> Tags { get; private set; }
-        
+        public IList<string> Tags { get; set; }
+        public IList<Comment> Comments { get; set; }
+
         public BlogPost(int authorUserId, string title)
         {
             if (authorUserId < 1 ){throw new ApplicationException("Blogpost cannot be created without an author");}
@@ -24,6 +25,7 @@ namespace BlogSite.Entities
             Tags = new List<string>();
             CreatedDate = DateTime.Now;
             UpdatedDate = DateTime.Now;
+            Comments = new List<Comment>();
         }
 
         
